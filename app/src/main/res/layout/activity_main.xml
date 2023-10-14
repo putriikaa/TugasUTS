@@ -13,27 +13,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <TextView
-    android:id="@+id/hello"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:fontFamily="@font/poppin"
-    android:text="Hello,"
-    android:layout_marginTop="40dp"
-    android:layout_marginLeft="20dp"
-    android:textSize="16sp" />
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppin"
+            android:text="Hello,"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/your_usn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/poppin"
-        android:layout_marginTop="2dp"
-        android:text="Username"
-        android:textColor="@color/blue"
-        android:layout_below="@+id/hello"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/your_usn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppin"
+            android:layout_marginTop="2dp"
+            android:text="Username"
+            android:textColor="@color/blue"
+            android:layout_below="@+id/hello"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/top_movie"
@@ -69,6 +69,7 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
                 android:clickable="true"
+                android:tag="0"
                 android:onClick="openMovieDetails">
 
                 <RelativeLayout
@@ -139,6 +140,8 @@
                 android:layout_margin="10dp"
                 android:layout_marginLeft="10dp"
                 app:cardCornerRadius="10dp"
+                android:tag="1"
+                android:onClick="openMovieDetails"
                 app:cardElevation="5dp">
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -209,6 +212,8 @@
                 android:layout_margin="10dp"
                 android:layout_marginLeft="10dp"
                 app:cardCornerRadius="10dp"
+                android:tag="2"
+                android:onClick="openMovieDetails"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
@@ -281,6 +286,8 @@
                 android:layout_margin="10dp"
                 android:layout_marginLeft="10dp"
                 app:cardCornerRadius="10dp"
+                android:tag="3"
+                android:onClick="openMovieDetails"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
@@ -354,6 +361,8 @@
                 android:layout_margin="10dp"
                 android:layout_marginLeft="10dp"
                 app:cardCornerRadius="10dp"
+                android:tag="4"
+                android:onClick="openMovieDetails"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
@@ -426,6 +435,8 @@
                 android:layout_margin="10dp"
                 android:layout_marginLeft="10dp"
                 app:cardCornerRadius="10dp"
+                android:tag="5"
+                android:onClick="openMovieDetails"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
@@ -492,5 +503,5 @@
             </androidx.cardview.widget.CardView>
         </GridLayout>
 
-</RelativeLayout>
+    </RelativeLayout>
 </ScrollView>

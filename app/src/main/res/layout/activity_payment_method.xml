@@ -16,13 +16,34 @@
         android:orientation="vertical"
         android:layout_margin="5dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/back2"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:src="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppin"
+                android:textSize="16sp" />
+        </LinearLayout>
         <!-- Isi Spinner Bioskop -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pilih Bioskop"
             android:textColor="@color/white"
-            android:fontFamily="@font/poppin"/>
+            android:fontFamily="@font/poppin"
+            android:layout_marginTop="15dp"/>
 
         <Spinner
             android:id="@+id/spinBioskop"
@@ -43,7 +64,7 @@
             android:fontFamily="@font/poppin"/>
 
         <Spinner
-            android:id="@+id/spinSeat"
+            android:id="@+id/spinSeatPilih"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
@@ -69,6 +90,14 @@
             android:backgroundTint="@color/abuterang"
             android:datePickerMode="calendar">
         </DatePicker>
+
+        <TimePicker
+            android:id="@+id/timePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:timePickerMode="clock">
+        </TimePicker>
 
         <!-- Isi Seat Information -->
         <LinearLayout
@@ -168,7 +197,7 @@
             android:fontFamily="@font/poppin"/>
 
         <Spinner
-            android:id="@+id/methodPay"
+            android:id="@+id/SpinmethodPay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
@@ -189,7 +218,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:layout_width="190dp"
+                    android:layout_width="170dp"
                     android:layout_height="40dp"
                     android:background="@drawable/shape"
                     android:backgroundTint="@color/abuterang"
