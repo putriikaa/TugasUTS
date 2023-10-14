@@ -1,28 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@color/navy"
+    android:padding="20dp"
     tools:context=".DetailsMovie">
 
-    <ImageView
-        android:id="@+id/posterfilm1"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppin"
+                android:text="Details Movie"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+        android:id="@+id/image"
         android:layout_width="500dp"
         android:layout_height="345dp"
-        android:src="@drawable/inimermed" />
+        android:src="@drawable/inimermed"
+            android:layout_marginTop="40dp"/>
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Judul Film"
-        android:layout_marginLeft="20dp"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
         android:fontFamily="@font/poppin"
-        android:layout_below="@+id/posterfilm1"
+        android:layout_below="@+id/image"
         android:layout_marginTop="16dp" />
 
     <TextView
@@ -31,9 +61,10 @@
         android:layout_height="wrap_content"
         android:text="Nama Direktor"
         android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppin"
-        android:layout_marginLeft="20dp"
         android:layout_below="@id/title"/>
 
     <RatingBar
@@ -42,8 +73,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_below="@+id/director"
-        android:layout_marginLeft="20dp"
         style="?android:attr/ratingBarStyleSmall"
+        android:numStars="4"
+        android:layout_marginLeft="10dp"
+        android:theme="@style/RatingBar"
         android:isIndicator="true" />
 
     <TextView
@@ -52,9 +85,11 @@
         android:layout_height="wrap_content"
         android:text="Categories"
         android:textSize="16sp"
+        android:fontFamily="@font/poppin"
+        android:textColor="@color/white"
         android:layout_marginTop="8dp"
-        android:layout_below="@id/rating"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/rating"/>
 
     <TextView
         android:id="@+id/description"
@@ -62,9 +97,11 @@
         android:layout_height="wrap_content"
         android:text="Short Storyline"
         android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppin"
         android:layout_marginTop="16dp"
-        android:layout_below="@id/categories"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/categories" />
 
     <TextView
         android:id="@+id/price"
@@ -73,17 +110,17 @@
         android:text="Ticket Price"
         android:textSize="12sp"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="20dp"
         android:layout_below="@id/description"
         android:background="@drawable/shape"
         android:backgroundTint="@color/abuterang"
         android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
         android:fontFamily="@font/poppin"/>
 
     <Button
         android:id="@+id/GetTicket"
         android:layout_width="350dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@drawable/buttonshape"
@@ -93,4 +130,5 @@
         android:textSize="14sp"
         android:backgroundTint="@color/emas"
         android:layout_below="@id/price"/>
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

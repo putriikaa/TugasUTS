@@ -1,227 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="#001B38"
+    android:padding="10dp"
     tools:context=".DetailPayment">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_arrow_back_ios_24"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Order Summary"
-            android:textColor="@color/white"
-            android:fontFamily="@font/poppin"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/mermaid" />
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="50dp">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/judulfilm"
+            <ImageView
+                android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="THE LITTLE MERMAID"
-                android:textColor="@color/white"
+                android:src="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/poppin"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
-
-            <TextView
-                android:id="@+id/bioskop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="XXI Ambarukmo plaza, Studio 1"
-                android:fontFamily="@font/poppin"
+                android:text="Order Summary"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                android:layout_marginBottom="10dp"/>
-
-            <TextView
-                android:id="@+id/tanggaljam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="Wednesday, 20 Nov 2019, 15:05"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:fontFamily="@font/poppin"/>
+                android:textSize="16sp" />
         </LinearLayout>
-    </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Order Number"
-        android:textColor="@color/emas"
-        android:layout_marginTop="350dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
-    <TextView
-        android:id="@+id/orderNumb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="1198804794001625088"
-        android:textColor="@color/white"
-        android:layout_marginTop="380dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Regular"
-        android:textColor="@color/white"
-        android:layout_marginTop="440dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/mermaid" />
 
-    <TextView
-        android:id="@+id/Seat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Seat"
-        android:textColor="@color/emas"
-        android:layout_marginTop="420dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Payment Method"
-        android:textColor="@color/emas"
-        android:layout_marginTop="475dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="THE LITTLE MERMAID"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppin"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:id="@+id/bankTransfer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bank Transfer (BNI)"
-        android:textColor="@color/white"
-        android:layout_marginTop="498dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/bioskop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXI Ambarukmo plaza, Studio 1"
+                    android:fontFamily="@font/poppin"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Regular Seat"
-        android:textColor="@color/emas"
-        android:layout_marginTop="530dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Number"
+            android:textColor="@color/emas"
+            android:layout_marginTop="350dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/orderNumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1198804794001625088"
+            android:textColor="@color/white"
+            android:layout_marginTop="380dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
-    <TextView
-        android:id="@+id/SeatHarga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rp35000"
-        android:textColor="@color/white"
-        android:layout_marginTop="555dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seat"
+            android:textColor="@color/white"
+            android:layout_marginTop="440dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
+        <TextView
+            android:id="@+id/JenisSeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regular"
+            android:textColor="@color/emas"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Convenience Free"
-        android:textColor="@color/emas"
-        android:layout_marginTop="585dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textColor="@color/emas"
+            android:layout_marginTop="475dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
-    <TextView
-        android:id="@+id/convenienceprice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rp0"
-        android:textColor="@color/white"
-        android:layout_marginTop="605dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/bankTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank Transfer (BNI)"
+            android:textColor="@color/white"
+            android:layout_marginTop="498dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
-    <View
-        android:layout_width="380dp"
-        android:layout_height="1dp"
-        android:background="#FFFF"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="640dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regular Seat"
+            android:textColor="@color/emas"
+            android:layout_marginTop="530dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Actual Pay"
-        android:textColor="@color/emas"
-        android:layout_marginTop="650dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/seatPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp35000"
+            android:textColor="@color/white"
+            android:layout_marginTop="555dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
-    <TextView
-        android:id="@+id/payLast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rp35000"
-        android:textColor="@color/white"
-        android:layout_marginTop="670dp"
-        android:layout_marginStart="20dp"
-        android:fontFamily="@font/poppin"
-        android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convenience Fee"
+            android:textColor="@color/emas"
+            android:layout_marginTop="585dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/pajak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp1000"
+            android:textColor="@color/white"
+            android:layout_marginTop="605dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="380dp"
+            android:layout_height="1dp"
+            android:background="#FFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="640dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actual Pay"
+            android:textColor="@color/emas"
+            android:layout_marginTop="650dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppin"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/payLast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20000"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppin"
+            android:layout_marginTop="675dp"
+            android:layout_marginStart="20dp"/>
+
+    </RelativeLayout>
+</ScrollView>
