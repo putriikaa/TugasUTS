@@ -22,5 +22,6 @@ class DetailsMovie : AppCompatActivity() {
         movieCategories.text = film?.categories
         movieShortStoryline.text = film?.description
         movieTicketPrice.text = "Ticket Price: $${film?.price}"
+
     }
 }
